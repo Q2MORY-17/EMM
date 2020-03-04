@@ -1,0 +1,2 @@
+# EMM
+exponential curve adaption
