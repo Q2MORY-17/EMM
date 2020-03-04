@@ -9,13 +9,22 @@ def sum_list(l):
 
 
 with open("lab4.txt", "r") as fo:
-    time = fo.read().split()[0::2]
+    time = fo.read().split()[0::2] # What does this line of code mean?? is it read column 0 to the end every 2 entries?
     for i in range(0, len(time)): 
         time[i] = int(time[i]) 
     #print(time)
     print(len(time))
 with open("lab4.txt", "r") as fo:
-    temperature = fo.read().split()[1::2]
+    temperature = fo.read().split()[1::2] # What does this line of code mean?? is it read column 1 to the end every 2 entries?
+    
+'''
+temp = []
+for x in temperature:
+    temp[x] = temperature[x].replace(',', '.')
+    temp[x] = float(temp[x])
+
+print(temp[0], temp[-1])
+'''
     temp = temperature.replace(',','.')
     print(temperature)
     #temperature = np.array(temperature).astype(np.float)
